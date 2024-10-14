@@ -1,0 +1,104 @@
+/* Optional: Additional styling for the navbar */
+.navbar {
+  background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar-brand {
+  font-weight: bold; /* Make the brand name bold */
+  color: #333; /* Custom text color */
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.nav-link {
+  color: #007bff; /* Custom link color */
+  font-weight: 500; /* Make nav link font slightly bolder */
+}
+
+.nav-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
+
+.navbar-toggler {
+  border: none; /* Remove border from toggler button */
+}
+
+.navbar-toggler:focus {
+  outline: none; /* Remove focus outline */
+}
+
+/* Media Queries for Further Customization */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center; /* Center links in mobile view */
+  }
+
+  .nav-item {
+    margin: 0.5rem 0; /* Space between nav items on mobile */
+  }
+}
+
+/* Background color for each section */
+#about {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+#departments {
+  background-color: #e0f7fa; /* Light green */
+}
+
+#events {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+#placements {
+  background-color: #e0f7fa; /* Light green */
+}
+
+#testimonials {
+  background-color: #f0f8ff; /* Light blue */
+}
+
+#contact {
+  background-color: #e0f7fa; /* Light green */
+}
+
+.hero {
+  position: relative;
+  background-image: url("/assets/college.webp");
+  background-size: cover;
+  background-position: center;
+  height: 680px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for opacity */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}

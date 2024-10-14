@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Departments - College Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Custom Styling */
+        .dept-card {
+            transition: transform 0.3s ease-in-out;
+        }
+        .dept-card:hover {
+            transform: translateY(-10px);
+        }
+        .dept-card img {
+            max-height: 150px;
+            object-fit: contain;
+        }
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #414435 !important; 
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="text-center pt-5">
+        <h1>Our Departments</h1>
+        <p class="lead">Explore our various departments and their offerings</p>
+    </header>
+
+    <!-- Departments Section -->
+    <section class="container py-5">
+        <div class="row text-center">
+            <!-- Computer Science and Engineering -->
+            <div class="col-md-4 mb-4">
+                <div class="card dept-card shadow-sm h-100">
+                    <img src="assets/cse.svg" class="card-img-top p-4" alt="CSE">
+                    <div class="card-body">
+                        <h3 class="card-title">Computer Science and Engineering</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Electronics and Communication Engineering -->
+            <div class="col-md-4 mb-4">
+                <div class="card dept-card shadow-sm h-100">
+                    <img src="assets/ece.svg" class="card-img-top p-4" alt="ECE">
+                    <div class="card-body">
+                        <h3 class="card-title">Electronics and Communication Engineering</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Information Technology -->
+            <div class="col-md-4 mb-4">
+                <div class="card dept-card shadow-sm h-100">
+                    <img src="assets/it.svg" class="card-img-top p-4" alt="IT">
+                    <div class="card-body">
+                        <h3 class="card-title">Information Technology</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <!-- Electrical and Electronics Engineering -->
+            <div class="col-md-4 mb-4">
+                <div class="card dept-card shadow-sm h-100">
+                    <img src="assets/eee.svg" class="card-img-top p-4" alt="EEE">
+                    <div class="card-body">
+                        <h3 class="card-title">Electrical and Electronics Engineering</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Civil Engineering -->
+            <div class="col-md-4 mb-4">
+                <div class="card dept-card shadow-sm h-100">
+                    <img src="assets/civil.svg" class="card-img-top p-4" alt="Civil">
+                    <div class="card-body">
+                        <h3 class="card-title">Civil Engineering</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Mechanical Engineering -->
+            <div class="col-md-4 mb-4">
+                <div class="card dept-card shadow-sm h-100">
+                    <img src="assets/mechanical.svg" class="card-img-top p-4" alt="Mechanical">
+                    <div class="card-body">
+                        <h3 class="card-title">Mechanical Engineering</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

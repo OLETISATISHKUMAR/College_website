@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Footer</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Include Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      /* Custom styles for the footer */
+      footer h5 {
+        margin-bottom: 20px; /* Space between heading and content */
+        font-size: 1.5rem; /* Larger font size for headings */
+        color: #555; /* Heading color */
+      }
+
+      footer p {
+        font-size: 0.9rem; /* Adjusted font size for better readability */
+        line-height: 1.5; /* Increased line height for spacing */
+        color: #555; /* Darker text color for better contrast */
+      }
+
+      footer ul li {
+        margin-bottom: 10px; /* Space between list items */
+      }
+
+      footer a {
+        transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      footer a:hover {
+        color: #0056b3; /* Change color on hover */
+        transform: translateY(-2px); /* Slight lift on hover */
+      }
+
+      .social-icons a {
+        display: inline-block;
+        margin-right: 15px; /* Spacing between social icons */
+        font-size: 1.5rem; /* Larger icons */
+        color: #668bb4; /* Default icon color */
+        transition: color 0.3s ease; /* Smooth transition for hover effect */
+      }
+
+      .social-icons a:hover {
+        color: #0056b3; /* Change icon color on hover */
+        transform: scale(1.1); /* Slightly larger on hover */
+      }
+
+      @media (max-width: 576px) {
+        footer h5 {
+          font-size: 1.25rem; /* Smaller font size for smaller screens */
+        }
+      }
+    </style>
+</head>
+<body>
+    <!-- Footer -->
+    <footer class="py-5"> <!-- Reduced padding here -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="font-weight-bold">Divya College of Engineering</h5>
+                    <p>
+                        At Divya College of Engineering, we empower students with knowledge and skills to excel in their careers. Our commitment to academic excellence, research, and innovation shapes the leaders of tomorrow.
+                    </p>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="font-weight-bold">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="about.html" class="text-dark">About Us</a></li>
+                        <li><a href="departments.html" class="text-dark">Departments</a></li>
+                        <li><a href="gallery.html" class="text-dark">Gallery</a></li>
+                        <li><a href="events.html" class="text-dark">Events</a></li>
+                        <li><a href="testimonials.html" class="text-dark">Testimonials</a></li>
+                        <li><a href="contact.html" class="text-dark">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="font-weight-bold">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <p>&copy; 2024 Divya College of Engineering. Made with ❤️ All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - College Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      /* Custom Styling */
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .event-card {
+        border: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden; /* Prevents overflow of content */
+        width: 100%; /* Set width to 100% of the parent */
+      }
+
+      .event-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      }
+
+      .event-card img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      .event-card .card-body {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .event-card h3 {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        color: #343a40; /* Dark color for card titles */
+      }
+
+      .event-card p {
+        font-size: 0.9rem;
+        color: #6c757d; /* Lighter color for text */
+      }
+
+      .event-section {
+        padding: 60px 0;
+      }
+
+      .card-text{
+        text-align: justify;
+      }
+      .event-section h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #495057; /* Dark color for headings */
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .event-card img {
+          height: 180px;
+        }
+
+        .event-card h3 {
+          font-size: 1.4rem;
+        }
+
+        .event-card p {
+          font-size: 0.9rem;
+        }
+      }
+
+      /* Additional spacing for better layout */
+      .mb-4 {
+        margin-bottom: 30px !important; /* Increased margin for spacing */
+      }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="text-center pt-5">
+      <h1>Our College Events</h1>
+      <p>Join us for exciting events and activities.</p>
+    </header>
+
+    <!-- Beautiful Events Card Section -->
+    <section class="event-section">
+        <div class="row justify-content-center">
+          <!-- Event Cards Container -->
+          <div class="col-md-10">
+            <div class="row">
+              <!-- Event 1 -->
+              <div class="col-md-3 mb-4 d-flex justify-content-center">
+                  <div class="card event-card">
+                      <img src="assets/techfest.png" class="card-img-top" alt="Anvena Techno-cultural fest" />
+                      <div class="card-body">
+                          <h3 class="card-title">Anvena Techno-cultural fest</h3>
+                          <p class="card-text">
+                              A lively event showcasing talents and cultural diversity with competitions, performances, and workshops, fostering creativity and camaraderie among students.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Event 2 -->
+              <div class="col-md-3 mb-4 d-flex justify-content-center">
+                  <div class="card event-card">
+                      <img src="assets/sports.webp" class="card-img-top" alt="Sports Day" />
+                      <div class="card-body">
+                          <h3 class="card-title">Sports Day</h3>
+                          <p class="card-text">
+                              An annual event showcasing various sports, fostering healthy competition and teamwork, and bringing students together for an unforgettable experience.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Event 3 -->
+              <div class="col-md-3 mb-4 d-flex justify-content-center">
+                  <div class="card event-card">
+                      <img src="assets/woomensday.avif" class="card-img-top" alt="Women's Day" />
+                      <div class="card-body">
+                          <h3 class="card-title">Women's Day</h3>
+                          <p class="card-text">
+                              Celebrated on March 8, honoring women's achievements and promoting gender equality through various programs and recognition events.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+              <!-- Event 4 -->
+              <div class="col-md-3 mb-4 d-flex justify-content-center">
+                  <div class="card event-card">
+                      <img src="assets/sankranti.jpg" class="card-img-top" alt="Sankranti Sambaralu" />
+                      <div class="card-body">
+                          <h3 class="card-title">Sankranti Sambaralu</h3>
+                          <p class="card-text">
+                              Pongal, the traditional harvest festival, is celebrated with cultural programs, festive decorations, and a sense of community among students and faculty.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light shadow">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="assets/logo.png" alt="Logo" height="50" class="me-2" />
+            <span>Divya College of Engineering</span>
+          </a>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Align links to the right -->
+            <li class="nav-item">
+              <a class="nav-link" href="#departments">Departments</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#events">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#placements">Placements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="display-4 font-weight-bold">Divya College of Engineering</h1>
+        <p class="lead">Dreams Come True</p>
+        <a href="#about" class="btn btn-light btn-lg">Learn More</a>
+      </div>
+    </header>
+
+    <!-- Main content area for dynamically loaded components -->
+    <main>
+      <div id="departments" class="full-height-section"></div>
+      <!-- Content for Departments -->
+      <div id="events" class="full-height-section"></div>
+      <!-- Content for Events -->
+      <div id="about" class="full-height-section"></div>
+      <!-- Content for About Us -->
+      <div id="placements" class="full-height-section"></div>
+      <!-- Content for Placements -->
+      <div id="testimonials" class="full-height-section"></div>
+      <!-- Content for Testimonials -->
+      <div id="contact" class="full-height-section"></div>
+      <!-- Content for Contact -->
+    </main>
+
+    <!-- Footer Section -->
+    <div id="footer"></div>
+
+    <!-- JS libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JS to load external HTML components -->
+    <script>
+      // Function to load external HTML content
+      function loadHTML(elementId, filePath) {
+        fetch(filePath)
+          .then((response) => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then((data) => {
+            document.getElementById(elementId).innerHTML = data;
+          })
+          .catch((error) => console.error("Error loading HTML:", error));
+      }
+
+      // Load content into different sections
+      window.onload = function () {
+        loadHTML("footer", "pages/footer.html"); // Load Footer
+        loadHTML("about", "about.html"); // Load About Us
+        loadHTML("departments", "department.html"); // Load Departments
+        loadHTML("events", "events.html"); // Load Events
+        loadHTML("placements", "placements.html"); // Load Placements
+        loadHTML("testimonials", "testimonials.html"); // Load Testimonials
+        loadHTML("contact", "contact.html"); // Load Contact Us
+      };
+    </script>
+  </body>
+</html>
